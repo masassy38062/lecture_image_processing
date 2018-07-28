@@ -16,8 +16,8 @@ imagesc(ORG); axis image; % 画像の表示
 
 原画像を2階調にするため、しきい値を128にもうけ、２値化する
 
-IMG = ORG>128;
-imagesc(IMG); colormap(gray); colorbar;  axis image;
+IMG = ORG>128; 
+imagesc(IMG); colormap(gray); colorbar;  axis image; 
 
 結果を図２に示す．
 
@@ -26,11 +26,11 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 同様に4階調原画像にするためには64ごとにしきい値を設け、濃度を分類する.
 
-IMG0 = ORG>64;
-IMG1 = ORG>128;
-IMG2 = ORG>192;
-IMG = IMG0 + IMG1 + IMG2;
-imagesc(IMG); colormap(gray); colorbar;  axis image;
+IMG0 = ORG>64; 
+IMG1 = ORG>128; 
+IMG2 = ORG>192; 
+IMG = IMG0 + IMG1 + IMG2; 
+imagesc(IMG); colormap(gray); colorbar;  axis image; 
 
 とする．4階調の結果を図３に示す．
 
@@ -39,17 +39,17 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 同様に8階調原画像にするためには8ごとにしきい値を設け、濃度を分類する.
 
-IMG3 = ORG>8;
-IMG4 = ORG>16;
-IMG5 = ORG>32;
-IMG6 = ORG>64;
-IMG7 = ORG>96;
-IMG8 = ORG>128;
-IMG9 = ORG>160;
-IMG10 = ORG>192;
-IMG11 = ORG>224;
-IMG = IMG3 + IMG4 + IMG5 + IMG6 + IMG7 + IMG8 + IMG9 + IMG10 + IMG11;
-imagesc(IMG); colormap(gray); colorbar;  axis image;
+IMG3 = ORG>8; 
+IMG4 = ORG>16; 
+IMG5 = ORG>32; 
+IMG6 = ORG>64; 
+IMG7 = ORG>96; 
+IMG8 = ORG>128; 
+IMG9 = ORG>160; 
+IMG10 = ORG>192; 
+IMG11 = ORG>224; 
+IMG = IMG3 + IMG4 + IMG5 + IMG6 + IMG7 + IMG8 + IMG9 + IMG10 + IMG11; 
+imagesc(IMG); colormap(gray); colorbar;  axis image; 
 
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/2-3.jpg?raw=true)  
 図4 8階調
