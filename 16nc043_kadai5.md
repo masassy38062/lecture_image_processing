@@ -43,6 +43,16 @@ max_thres =i;
 end;  
 end;  
 
+計算した結果、分散比の最大は以下の値になった  
+disp(max_val)  
+
+    0.7831
+
+計算した結果、しきい値は以下の値になった  
+disp(max_thres)  
+    
+    138
+
 IMG = ORG > max_thres;  
 imagesc(IMG); colormap(gray); colorbar;  
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/5-2.jpg?raw=true)  
