@@ -16,8 +16,9 @@ imagesc(ORG); axis image; % 画像の表示
 
 原画像を2階調にするため、しきい値を128にもうけ、２値化する
 
-IMG = ORG>128; 
-imagesc(IMG); colormap(gray); colorbar;  axis image; 
+IMG = ORG>128;  
+imagesc(IMG); colormap(gray); colorbar;  axis image;  
+
 
 結果を図２に示す．
 
@@ -26,11 +27,15 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 同様に4階調原画像にするためには64ごとにしきい値を設け、濃度を分類する.
 
-IMG0 = ORG>64; 
-IMG1 = ORG>128; 
-IMG2 = ORG>192; 
-IMG = IMG0 + IMG1 + IMG2; 
-imagesc(IMG); colormap(gray); colorbar;  axis image; 
+IMG0 = ORG>64;  
+IMG1 = ORG>128;  
+
+IMG2 = ORG>192;  
+
+IMG = IMG0 + IMG1 + IMG2;  
+
+imagesc(IMG); colormap(gray); colorbar;  axis image;  
+
 
 とする．4階調の結果を図３に示す．
 
