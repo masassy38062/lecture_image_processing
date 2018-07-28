@@ -15,14 +15,14 @@ magesc(ORG); colormap(gray); colorbar; % 画像の表示
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/4-1.jpg?raw=true)  
 図1 白黒濃淡画像
 
-原画像の輝度値を分析してヒストグラム化する
+原画像の輝度値を分析してヒストグラム化する  
 imhist(ORG); % ヒストグラムの表示  
 結果を図２に示す．
 
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/4-2.jpg?raw=true)  
 図2 ヒストグラム1
 
-明るさを際立たせるためにヒストグラムを平坦化し、さらにヒストグラムを表示する
+明るさを際立たせるためにヒストグラムを平坦化し、さらにヒストグラムを表示する  
 J = histeq(ORG); % ヒストグラムの平坦化  
 imhist(J)  
 結果を図3に示す．
@@ -33,7 +33,7 @@ imhist(J)
 ヒストグラムを平坦化した画像と並べて比較する
 
 imshowpair(ORG,J,'montage') % 両方を並べて表示  
-結果を図4に示す．左が原画像、右が輝度値を平坦化させた画像
+結果を図4に示す．左が原画像、右が輝度値を平坦化させた画像  
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/4-4.jpg?raw=true)  
 図4 明るさ調整の比較
 
