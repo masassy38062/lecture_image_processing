@@ -31,7 +31,7 @@ imhist(J)
 
 結果を図3に示す．
 
-![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/3-3.jpg?raw=true)  
+![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/4-3.jpg?raw=true)  
 図3 ヒストグラム2
 
 ヒストグラムを平坦化した画像と並べて比較する
