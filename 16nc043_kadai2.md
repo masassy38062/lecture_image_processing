@@ -55,4 +55,4 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/2-3.jpg?raw=true)  
 図4 8階調
 
-このように階調を大きくするとグレイスケールが細やかに表現できる．
+このように階調を増やすとグレイスケールが細やかに表現できる．
