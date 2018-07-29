@@ -25,7 +25,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/2-1.jpg?raw=true)  
 図2 2階調
 
-同様に4階調原画像にするためには64ごとにしきい値を設け、濃度を分類する.
+同様に4階調原画像にするためには64ごとにしきい値を設け、輝度値を分類する.
 
 IMG0 = ORG>64;  
 IMG1 = ORG>128;  
@@ -38,7 +38,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 ![原画像](https://github.com/masassy38062/lecture_image_processing/blob/master/image/2-2.jpg?raw=true)  
 図3 4階調
 
-同様に8階調原画像にするためには8ごとにしきい値を設け、濃度を分類する.
+同様に8階調原画像にするためには8ごとにしきい値を設け、輝度値を分類する.
 
 IMG3 = ORG>8;  
 IMG4 = ORG>16;  
